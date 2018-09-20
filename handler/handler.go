@@ -1,6 +1,7 @@
 package handler
 
 import (
+  "fmt"
   "log"
   "strings"
   "net/http"
@@ -11,6 +12,7 @@ import (
 )
 
 func CorsProxy(w http.ResponseWriter, req *http.Request) {
+  fmt.Println("Handling request from " + req.Header.Get("Referer"))
   type ReqBody struct {
     Url    string `json:url`
     Data   string `json:data`
