@@ -49,5 +49,6 @@ func CorsProxy(w http.ResponseWriter, req *http.Request) {
     http.SetCookie(w, cookie)
   }
   w.Header().Set("Content-Type", "application/json")
+  w.WriteHeader(remoteRes.StatusCode)
   w.Write([]byte(response))
 }
