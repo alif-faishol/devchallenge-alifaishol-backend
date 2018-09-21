@@ -13,7 +13,7 @@ $ export GOPATH=$(go env GOPATH)
 $ cd $GOPATH
 ```
 
-2. Download repo dan *dependency*:
+2. Download repo:
 
 ```
 $ go get https://github.com/alif-faishol/devchallenge-alifaishol-backend
@@ -24,14 +24,19 @@ $ go get https://github.com/alif-faishol/devchallenge-alifaishol-backend
 $ cd src/github.com/alif-faishol/devchallenge-alifaishol-backend
 ```
 
-4. Copy `.env.dist` ke `.env`.
+4. Download *dependency*:
+```
+$ go get
+```
+
+5. Copy `.env.dist` ke `.env`.
 ```
 $ cp .env.dist .env
 ```
 
-5. Pastikan alamat aplikasi front-end di `.env` sudah sesuai.
+6. Pastikan alamat aplikasi front-end di `.env` sudah sesuai.
 
-6. Jalankan development server:
+7. Jalankan development server:
 ```
 go run *.go
 ```
