@@ -16,7 +16,7 @@ $ cd $GOPATH
 2. Download repo:
 
 ```
-$ go get https://github.com/alif-faishol/devchallenge-alifaishol-backend
+$ go get github.com/alif-faishol/devchallenge-alifaishol-backend
 ```
 
 3. Masuk ke folder repo:
